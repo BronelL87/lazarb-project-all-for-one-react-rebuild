@@ -9,7 +9,7 @@ const HomePage = () => {
         <h1 className="text-white text-[96px] flex justify-center">All For One</h1>
   
           <div>
-              <button className="text-white btnCol bg-[#7A3A13] text-[36px] w-[300px] h-[80px] rounded-[20px] text-center"><Link to={'/say-hello'}>Say Hello</Link></button>
+              <Link to={'/say-hello'}><button className="text-white btnCol bg-[#7A3A13] text-[36px] w-[300px] h-[80px] rounded-[20px] text-center">Say Hello</button></Link>
               <button className="text-white btnCol text-[28px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center ml-10">Asking Questions</button>
           </div>
   
