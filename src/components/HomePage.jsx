@@ -1,5 +1,4 @@
-import { Button } from "flowbite-react"
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const HomePage = () => {
 
@@ -10,28 +9,28 @@ const HomePage = () => {
   
           <div>
               <Link to={'/say-hello'}><button className="text-white btnCol bg-[#7A3A13] text-[36px] w-[300px] h-[80px] rounded-[20px] text-center">Say Hello</button></Link>
-              <button className="text-white btnCol text-[28px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center ml-10">Asking Questions</button>
+             <Link to={'/asking-questions'}><button className="text-white btnCol text-[28px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center ml-10">Asking Questions</button></Link>
           </div>
   
           <div>
-              <button className="text-white btnCol text-[30px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center">Adding Numbers</button>
-              <button className="text-white btnCol text-[36px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px]  text-center ml-10">Mad Lib</button>
+             <Link to={'/adding-numbers'}><button className="text-white btnCol text-[30px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center">Adding Numbers</button></Link> 
+             <Link to={'/mad-lib'}><button className="text-white btnCol text-[36px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px]  text-center ml-10">Mad Lib</button></Link> 
           </div> 
   
           <div>
-              <button className="text-white btnCol text-[36px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center">Odd Or Even</button>
-              <button className="text-white btnCol text-[28px] bg-[#7A3A13]  w-[300px] h-[80px] rounded-[20px] text-center ml-10">Reverse It (Alpha)</button>
+             <Link to={'/odd-even'}><button className="text-white btnCol text-[36px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center">Odd Or Even</button></Link> 
+             <Link to={'/reverse-it-a'}><button className="text-white btnCol text-[28px] bg-[#7A3A13]  w-[300px] h-[80px] rounded-[20px] text-center ml-10">Reverse It (Alpha)</button></Link> 
           </div>
   
           <div>
-              <button className="text-white btnCol text-[32px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center">Greater Or Less</button>
-              <button className="text-white btnCol text-[28px] bg-[#7A3A13] rounded-[20px]  w-[300px] h-[80px] text-center ml-10">Reverse It (Num)</button>
+              <Link to={'/greater-less'}><button className="text-white btnCol text-[32px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center">Greater Or Less</button></Link> 
+              <Link to={'/reverse-it-n'}><button className="text-white btnCol text-[28px] bg-[#7A3A13] rounded-[20px]  w-[300px] h-[80px] text-center ml-10">Reverse It (Num)</button></Link> 
           </div>
   
   
           <div>
-              <button className="text-white btnCol text-[32px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center">Magic 8 Ball</button>
-              <button className="text-white btnCol text-[28px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center ml-10">Restaurant Picker</button>
+              <Link to={'/magic-ball'}><button className="text-white btnCol text-[32px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center">Magic 8 Ball</button></Link> 
+              <Link to={'/restaurant-pick'}><button className="text-white btnCol text-[28px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center ml-10">Restaurant Picker</button></Link> 
           </div>
   
       </section>
