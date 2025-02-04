@@ -1,0 +1,26 @@
+
+@font-face {
+  font-family: 'Graduate';
+  src: url('./assets/fonts/Graduate-Regular.ttf');
+}
+
+
+body{
+  background-image: url('./assets/AfoBg.jpg');
+  margin: 0px;
+  font-family: 'Graduate';
+}
+
+.btnCol{
+  background-color: #7A3A13;
+  width: 300px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+.inptSize{
+  width: 500px;
+  height: 80px;
+  border-radius: 20px;
+
+}
