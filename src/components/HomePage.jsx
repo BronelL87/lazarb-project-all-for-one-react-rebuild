@@ -13,7 +13,7 @@ const HomePage = () => {
           </div>
   
           <div>
-             <Link to={'/adding-numbers'}><button className="text-white btnCol text-[30px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center">Adding Numbers</button></Link> 
+             <Link to={'/add-numbers'}><button className="text-white btnCol text-[30px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px] text-center">Adding Numbers</button></Link> 
              <Link to={'/mad-lib'}><button className="text-white btnCol text-[36px] bg-[#7A3A13] w-[300px] h-[80px] rounded-[20px]  text-center ml-10">Mad Lib</button></Link> 
           </div> 
   
