@@ -48,6 +48,18 @@ const magic8Ball = async (questionInpt) => {
     return data;
 }
 
+const GreaterOrLessThan = async (num1, num2) => {
+    const response = await fetch(`https://blazarallforoneapi-caa5d0dqhgdxdvhk.westus-01.azurewebsites.net/GreaterOrLess/GreaterOrLessCheck/${num1}/${num2}`);
+    const data = await response.text();
+    return data;
+}
+
+const pickRestaurant = async(chosenRestaurant) => {
+    const response = await fetch(`https://blazarallforoneapi-caa5d0dqhgdxdvhk.westus-01.azurewebsites.net/RestaurantPicker/RestaurantPick/${chosenRestaurant}`);
+    const data = await response.text();
+    return data;
+}
 
 
-export { getHello, askQuestions, addNums, StoryLib, getOddOrEven, reverseAlph, reverseNums, magic8Ball }
+
+export { getHello, askQuestions, addNums, StoryLib, getOddOrEven, reverseAlph, reverseNums, magic8Ball, GreaterOrLessThan, pickRestaurant }
