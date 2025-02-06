@@ -17,10 +17,10 @@ const SayHello = () => {
     }, [hello])
 
     return (
-        <div className="grid grid-col-2 justify-end mx-[200px] my-[30px] gap-11">
+        <div className="grid grid-col-2 lg:justify-end lg:mx-[100px] my-[30px] gap-11 sm:mx-[0px] sm:justify-center">
                 <h1 className="text-white text-[96px] flex justify-end mx-[210px]">Say Hello</h1>
 
-            <div>
+            <div className="grid grid-col-2 justify-end mx-[220px] gap-11 mt-[100px]">
                 {
                     displayTxt.length == 0  ? <p className="text-white text-[36px]">Please Input Your Name</p>
                     :  <p className="text-white text-[36px]">{hello}</p>
@@ -29,7 +29,7 @@ const SayHello = () => {
              <input className="bg-white inptSize" type="text" placeholder="Name Here..." onChange={(event) => {setUserInput(event.target.value)}}/>
             </div>
 
-                <div>
+                <div className="grid grid-col-2 justify-end mx-[330px] gap-10">
                     <div>
                         <button className="text-white text-[36px] btnCol" onClick={fetchHello}>Go!</button>
                     </div>
