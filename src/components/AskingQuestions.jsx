@@ -18,11 +18,11 @@ const AskingQuestions = () => {
     }, [resp]);
 
     return(
-        <div className="grid grid-col-2 lg:justify-end lg:mx-[50px] my-[30px] gap-11 sm:mx-[0px] sm:justify-center">
+        <div className="grid grid-col-2 lg:justify-end lg:mx-[50px] my-[30px] gap-11 sm:mx-[0px] md:justify-center">
 
-            <h1 className="text-white text-[96px] flex justify-end">Asking Questions</h1>
+            <h1 className="text-white text-[96px] flex lg:justify-end md:justify-center">Asking Questions</h1>
 
-        <div className="grid grid-col-2 justify-end ml-[200px] my-[30px] gap-11 w-[581px]">
+        <div className="grid grid-col-2 lg:justify-end lg:ml-[200px] my-[30px] gap-11 w-[581px] md:ml-[0px] md:justify-center">
             {
                 displayTxt.length == 0 ? <p className="text-white text-[36px]">Please Input Your name and time you woke up</p>
                 :<p className="text-white text-[36px]">{resp}</p>
@@ -37,7 +37,7 @@ const AskingQuestions = () => {
             }}/>
         </div>
 
-            <div className="grid grid-col-2 justify-end mr-[350px] gap-10">
+            <div className="grid grid-col-2 lg:justify-end mr-[350px] gap-10 md:justify-center md:mr-[0px]">
                 <div>
                     <button className="text-white text-[36px] btnCol" onClick={fetchAskQ}>Go!</button>
                 </div>
