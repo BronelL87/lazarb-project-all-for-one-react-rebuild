@@ -14,6 +14,8 @@
 - YOU MUST HAVE DATA VALIDATION COMPLETED
 
 ### Peer Review
+Name: Ian Chesley
+Review: The code is well put together. Connects to the API without issue.
 
 **Reviewer** 
  
