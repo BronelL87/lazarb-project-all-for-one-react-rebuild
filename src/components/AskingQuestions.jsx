@@ -18,26 +18,26 @@ const AskingQuestions = () => {
     }, [resp]);
 
     return(
-        <div className="grid grid-col-2 lg:justify-end lg:mx-[50px] my-[30px] gap-11 sm:mx-[0px] md:justify-center">
+        <div className="flex flex-col items-center mx-auto my-[30px] gap-11 lg:mx-[100px] lg:items-end sm:mx-0">
 
             <h1 className="text-white text-[96px] flex lg:justify-end md:justify-center">Asking Questions</h1>
 
-        <div className="grid grid-col-2 lg:justify-end lg:ml-[200px] my-[30px] gap-11 w-[581px] md:ml-[0px] md:justify-center">
+        <div className="flex flex-col items-center gap-6 lg:items-end lg:mx-[220px] lg:mt-[10px] w-[531px]">
             {
-                displayTxt.length == 0 ? <p className="text-white text-[36px]">Please Input Your name and time you woke up</p>
+                displayTxt.length == 0 ? <p className="text-white text-[36px] max-[560px]:w-[340px]">Please Input Your name and time you woke up</p>
                 :<p className="text-white text-[36px]">{resp}</p>
 
             }
             
-            <input className="bg-white inptSize" type="text" placeholder="Name Here..." onChange={(event) => {
+            <input className="bg-white inptSize max-[560px]:w-[340px] max-[560px]:h-[100px]" type="text" placeholder="Name Here..." onChange={(event) => {
                 setNameInput(event.target.value);
             }}/>
-            <input className="bg-white inptSize" type="text" placeholder="Time Here..." onChange={(event) => {
+            <input className="bg-white inptSize max-[560px]:w-[340px] max-[560px]:h-[100px]" type="text" placeholder="Time Here..." onChange={(event) => {
                 setTimeInput(event.target.value);
             }}/>
         </div>
 
-            <div className="grid grid-col-2 lg:justify-end mr-[350px] gap-10 md:justify-center md:mr-[0px]">
+            <div className="grid grid-col-2 lg:justify-end lg:mr-[350px] gap-10 md:justify-center md:mr-[0px]">
                 <div>
                     <button className="text-white text-[36px] btnCol" onClick={fetchAskQ}>Go!</button>
                 </div>
